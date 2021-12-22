@@ -22,3 +22,5 @@ for row in ws.iter_rows(min_row=0, max_row=ws.max_row, min_col=1, max_col=ws.max
         if os.path.isfile(source + row[7].value):
             shutil.copy(source + row[7].value, dest + row[7].value)
             print("Copied\n")
+
+            
